@@ -20,14 +20,58 @@
   </head>
   <body data-theme="light">
     <div class="container lg:mx-auto lg:px-40 px-5">
+
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+         <div  class="flex gap-2 items-center">
+          <div class="dropdown lg:hidden block">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><input class="input bg-slate-200" type="text" placeholder="Search"></li>
+              <li class="mt-2"><a>Homepage</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+              
+            </ul>
+          </div>
+          <div class="font-extrabold text-3xl">
+            Hockey<span class="text-[#FF4240]">’</span>s
+        </div>
+         </div>
+        </div>
+        <div class="navbar-center">
+          <div class="hidden lg:block">
+            <div class="flex items-center gap-10 text-base text-[#424247]">
+              <div class="text-[#FF4240] font-bold">Home</div>
+              <div class="">About</div>
+              <div class="">Pages</div>
+              <div class="">Blog</div>
+              <div class="">Contact</div>
+            </div>
+        </div>
+        </div>
+        <div class="navbar-end">
+          <div class="flex gap-6 items-center">
+            <div class="lg:block hidden text-2xl text-[#89898B]">
+              <i class="ri-search-line"></i>
+            </div>
+            <div class="btn btn-error bg-[#FF4240] text-white text-xl">Get Ticket</div>
+          </div>
+        </div>
+      </div>
+
       <!-- HEADER -->
-      <header class="flex justify-between py-5">
+      <!-- <header class="flex justify-between py-5">
        <div class="block lg:hidden"> <div class="font-extrabold text-3xl flex items-center gap-3"><i class="ri-menu-2-line"></i><div>Hockey<span class="text-[#FF4240]">’</span>s</div></div></div>
         <div class="hidden lg:block font-extrabold text-3xl">
             Hockey<span class="text-[#FF4240]">’</span>s
         </div>
         <div class="hidden lg:block">
-          <div class="flex items-center gap-[16px] text-base text-[#424247]">
+          <div class="flex items-center gap-10 text-base text-[#424247]">
             <div class="text-[#FF4240] font-bold">Home</div>
             <div class="">About</div>
             <div class="">Pages</div>
@@ -37,15 +81,30 @@
       </div>
 
         <div class="flex gap-6 items-center">
-          <div class="text-2xl text-[#89898B]">
+          <div class="lg:block hidden text-2xl text-[#89898B]">
             <i class="ri-search-line"></i>
           </div>
           <div class="btn btn-error bg-[#FF4240] text-white text-xl">Get Ticket</div>
         </div>
-      </header>
+      </header> -->
 
       <!-- carousel -->
+      <div class="relative">
+        <div class="hidden lg:block">
+          <div class="rounded-2xl p-8 text-white absolute right-5 bottom-5 bg-black w-[500px] flex flex-col gap-2 z-10">
+            <div class="font-bold text-2xl">
+              Meet all the heroes from the field
+            </div>
+            <div class="text-base">
+              Discover the remarkable stories of unsung heroes and trailblazers across various fields.
+              Embark on a journey to meet extraordinary individuals making a difference in diverse fields.
+            </div>
+          </div>
+        </div>
+      
       <div class="carousel w-full relative">
+       
+
         <div id="slide1" class="carousel-item relative w-full lg:h-[500px]">
           <img src="./images/1.png" class="lg:h-[500px] w-full rounded-xl" />
           <div
@@ -81,19 +140,10 @@
           </div>
         </div>
 
-        <div class="hidden lg:block">
-        <div class="rounded-2xl p-8 text-white absolute right-5 bottom-5 bg-black w-[500px] flex flex-col gap-2">
-          <div class="font-bold text-2xl">
-            Meet all the heroes from the field
-          </div>
-          <div class="text-base">
-            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
-            turpis placerat dolor. Purus urna in sit nullam proin.
-          </div>
-        </div>
-      </div>
+        
 
       </div>
+    </div>
 
       <div class="block lg:hidden">
       <div class="rounded-2xl w-full mt-10 p-8 text-white bg-black w-[500px] flex flex-col gap-2">
@@ -101,8 +151,8 @@
             Meet all the heroes from the field
           </div>
           <div class="text-base">
-            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
-            turpis placerat dolor. Purus urna in sit nullam proin.
+            Discover the remarkable stories of unsung heroes and trailblazers across various fields.
+              Embark on a journey to meet extraordinary individuals making a difference in diverse fields.
           </div>
         </div>
       </div>
@@ -112,8 +162,8 @@
         <div class="w-[580px]">
           <div class="text-4xl font-extrabold">Professional Hockeys Club</div>
           <div class="text-sm m-5 text-[#13131899]">
-            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
-            turpis placerat dolor. Purus urna in sit nullam proin.
+            Elevating Excellence: Join the Professional Hockey Club for a Premier Sporting Experience.
+            Skate into Success: Unleash Your Passion with the Professional Hockey Club.
           </div>
         </div>
       </div>
@@ -145,7 +195,7 @@
           </div>
           <div class="text-xl font-semibold">Prayer Facility</div>
           <div class="text-base text-[#13131899]">
-            Amet consectetur. Condimentum dignissim adipiscing .
+            Our Prayer Facility offers a tranquil haven for moments of reflection and connection.
           </div>
         </div>
 
@@ -173,7 +223,7 @@
           </div>
           <div class="text-xl font-semibold">Experienced Coach</div>
           <div class="text-base text-[#13131899]">
-            Amet consectetur. Condimentum dignissim adipiscing .
+            Our seasoned coaches bring a wealth of experience, dedication, and personalized guidance to every coaching session.
           </div>
         </div>
 
@@ -201,7 +251,7 @@
           </div>
           <div class="text-xl font-semibold">Senior Player</div>
           <div class="text-base text-[#13131899]">
-            Amet consectetur. Condimentum dignissim adipiscing .
+            Embark on a Journey of Mastery with Our Senior Players.
           </div>
         </div>
 
@@ -229,7 +279,7 @@
           </div>
           <div class="text-xl font-semibold">Training Ground</div>
           <div class="text-sm text-[#13131899]">
-            Amet consectetur. Condimentum dignissim adipiscing .
+            Our Training Ground is a sacred arena where dedication meets discipline, and aspirations evolve into achievements.
           </div>
         </div>
       </div>
@@ -241,8 +291,7 @@
         <div class="w-[580px]">
           <div class="text-4xl font-extrabold">Program Sections</div>
           <div class="text-sm m-5 text-[#13131899]">
-            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
-            turpis placerat dolor. Purus urna in sit nullam proin.
+            Discover the richness within our organization through its multifaceted Program Sections, each a unique facet of our comprehensive offerings
           </div>
         </div>
       </div>
@@ -253,8 +302,8 @@
         <div class="lg:w-full back-g bg1 flex flex-col justify-end pb-10">
             <div class="text-left flex flex-col gap-3 items-start px-10">
                 <div class="text-2xl font-extrabold">Junior Program</div>
-                <div class="text-sm">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
-                    enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</div>
+                <div class="text-sm">Empowering Tomorrow's Leaders: Unleashing Potential through the Junior Program.
+                  Journeying into Excellence with our Junior Program.</div>
             <div class="btn btn-error text-white font-bold">Register Now!</div>
             </div>
         </div>
@@ -262,8 +311,8 @@
         <div class="lg:w-full back-g bg2 flex flex-col justify-end pb-10">
             <div class="text-left flex flex-col gap-3 items-start px-10">
                 <div class="text-2xl font-extrabold">Teenager Program</div>
-                <div class="text-sm">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
-                    enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</div>
+                <div class="text-sm">Navigating Adolescence: Empowering Growth with the Teenager Program. 
+                  Unleashing Potential through our Teenager Program</div>
             <div class="btn btn-error bg-[#FF4240;] text-white font-bold">Register Now!</div>
             </div>
         </div>
@@ -272,8 +321,8 @@
       <div class="bg3 back-gl lg:w-full text-white mt-5 lg:h-[450px] h-[350px] flex flex-col justify-end pb-10">
         <div class="text-left flex flex-col gap-3 items-start px-10 lg:w-[510px]">
             <div class="text-2xl font-extrabold">Professional Program</div>
-            <div class="text-sm">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
-                enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</div>
+            <div class="text-sm">Master Your Craft: Elevate Your Skills with the Professional Program.
+              Unleashing Potential through Our Professional Program.</div>
         <div class="btn btn-error bg-[#FF4240;] text-white font-bold">Register Now!</div>
         </div>
       </div>
@@ -286,8 +335,8 @@
         <div class="w-[580px]">
           <div class="text-4xl font-extrabold">Our New Products</div>
           <div class="text-sm m-5 text-[#13131899]">
-            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
-            turpis placerat dolor. Purus urna in sit nullam proin.
+            Explore the Essence of Our New Products.
+            Introducing the Latest in Our Array of New Products.
           </div>
         </div>
       </div>
@@ -297,7 +346,7 @@
       <div class="grid lg:grid-rows-3 grid-rows-6 gap-5 grid-flow-col">
 
         <div class="flex lg:flex-row flex-col items-center gap-10 px-6 py-5 rounded-xl border-2 border-solid border-[#E8E8EB99]">
-          <div class=""><img class="h-30" src="./images/5.png"></div>
+          <div class=""><img class="lg:h-auto h-80" src="./images/5.png"></div>
           <div class="flex flex-col gap-3">
             <div class="flex gap-5 justify-items-start items-center text-[#13131899]">
               <div class="flex gap-1 items-center"><i class="text-[#F99808] ri-star-fill"></i> 5.0</div>
@@ -314,7 +363,7 @@
         </div>
 
         <div class="flex lg:flex-row flex-col items-center gap-10 p-8 rounded-xl border-2 border-solid border-[#E8E8EB99]">
-          <div class=""><img class="h-30" src="./images/7.png"></div>
+          <div class=""><img class="lg:h-auto h-80" src="./images/7.png"></div>
           <div class="flex flex-col gap-3">
             <div class="flex gap-5 justify-items-start items-center text-[#13131899]">
               <div class="flex gap-1 items-center"><i class="text-[#F99808] ri-star-fill"></i> 5.0</div>
@@ -331,7 +380,7 @@
         </div>
 
         <div class="flex lg:flex-row flex-col items-center gap-10 p-8 rounded-xl border-2 border-solid border-[#E8E8EB99]">
-          <div class=""><img class="h-30" src="./images/9.png"></div>
+          <div class=""><img class="lg:h-auto h-80" src="./images/9.png"></div>
           <div class="flex flex-col gap-3">
             <div class="flex gap-5 justify-items-start items-center text-[#13131899]">
               <div class="flex gap-1 items-center"><i class="text-[#F99808] ri-star-fill"></i> 5.0</div>
@@ -348,7 +397,7 @@
         </div>
 
         <div class="flex lg:flex-row flex-col items-center gap-10 p-8 rounded-xl border-2 border-solid border-[#E8E8EB99]">
-          <div class=""><img class="h-30" src="./images/6.png"></div>
+          <div class=""><img class="lg:h-auto h-80" src="./images/6.png"></div>
           <div class="flex flex-col gap-3">
             <div class="flex gap-5 justify-items-start items-center text-[#13131899]">
               <div class="flex gap-1 items-center"><i class="text-[#F99808] ri-star-fill"></i> 5.0</div>
@@ -366,7 +415,7 @@
       
 
         <div class="flex lg:flex-row flex-col items-center gap-10 p-8 rounded-xl border-2 border-solid border-[#E8E8EB99]">
-          <div class=""><img class="h-30" src="./images/8.png"></div>
+          <div class=""><img class="lg:h-auto h-80" src="./images/8.png"></div>
           <div class="flex flex-col gap-3">
             <div class="flex gap-5 justify-items-start items-center text-[#13131899]">
               <div class="flex gap-1 items-center"><i class="text-[#F99808] ri-star-fill"></i> 5.0</div>
@@ -383,7 +432,7 @@
         </div>
         
         <div class="flex lg:flex-row flex-col items-center gap-10 p-8 rounded-xl border-2 border-solid border-[#E8E8EB99]">
-          <div class=""><img class="h-30" src="./images/10.png"></div>
+          <div class=""><img class="lg:h-auto h-80" src="./images/10.png"></div>
           <div class="flex flex-col gap-3">
             <div class="flex gap-5 justify-items-start items-center text-[#13131899]">
               <div class="flex gap-1 items-center"><i class="text-[#F99808] ri-star-fill"></i> 5.0</div>
@@ -407,8 +456,7 @@
         <div class="w-[580px]">
           <div class="text-4xl font-extrabold">Clients Question</div>
           <div class="text-sm m-5 text-[#13131899]">
-            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
-            turpis placerat dolor. Purus urna in sit nullam proin.
+            Insightful Answers to Your Inquiries: Explore Our Clients Questions Section for Comprehensive Information and Support.
           </div>
         </div>
       </div>
@@ -488,8 +536,7 @@
         <div class="w-[580px]">
           <div class="text-4xl font-extrabold">Get In Touch</div>
           <div class="text-sm m-5 text-[#13131899]">
-            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
-            turpis placerat dolor. Purus urna in sit nullam proin.
+            Whether you have inquiries, feedback, or collaboration proposals, we're here to listen and respond promptly.
           </div>
         </div>
       </div>
@@ -514,7 +561,7 @@
             </div>
           </div>
 
-          <div class="flex flex-col justify-start bg-[#fddd5f1a] rounded-xl w-full p-10 gap-5">
+          <div class="flex flex-col justify-start bg-[#629cf31a] rounded-xl w-full p-10 gap-5">
             <div class=""><img src="./images/Group 1171275321.png"></div>
             <div class="flex flex-col gap-1">
               <div class="text-base text-[#13131899]">Location:</div>
@@ -596,7 +643,7 @@
     <div class="bg-[#131318] lg:mx-auto lg:pl-80 lg:pr-40 py-20 text-white flex lg:flex-row flex-col justify-between">
       <div class="flex flex-col gap-5 lg:text-left text-center">
         <div class="text-white text-3xl font-extrabold">Get In Touch</div>
-        <div class="text-base text-[#A5A5AA]">Dit amet consectetur. Condimentum  adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </div>
+        <div class="text-base text-[#A5A5AA]"> Whether you have inquiries, feedback, or collaboration proposals, we're here to listen and respond promptly.</div>
         <div class="flex flex-col gap-2 text-white lg:items-start items-center">
           <div class="flex gap-2 items-center"><i class="ri-mail-line text-[#FF4240]"></i> hockeys@support.com</div>
           <div class="flex gap-2 items-center"><i class="ri-phone-line text-[#FF4240]"></i> (+62) 123-321-543</div>
